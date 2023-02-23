@@ -1,4 +1,4 @@
-const { Course, Student, Thought } = require('../models');
+const { Thought } = require('../models');
 
 module.exports = {
   // Get all courses
