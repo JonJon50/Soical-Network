@@ -55,7 +55,7 @@
 
 <br>
 
-🔭 [Deployment Website](https://drive.google.com/file/d/1tfy9g1DGI9eUbnjihZgitYW4bga30lvB/view) 🔭
+🔭 [Deployment Video](https://drive.google.com/file/d/1tfy9g1DGI9eUbnjihZgitYW4bga30lvB/view) 🔭
 
 ![Photo1](./assets/images/Insomnia.png)
 ![Photo1](./assets/images/Insomnia1.png)
@@ -83,7 +83,7 @@
 
 - [x] Reliable API // This is done 
 - [x] Authentication // This is done
-- [x] Heroku Storage // This is done 
+ 
 
 <br>
 <h2 id="credits">Collaborators/Creditors 🏆</h2>
