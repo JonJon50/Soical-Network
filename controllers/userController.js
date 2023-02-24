@@ -73,8 +73,8 @@ module.exports = {
   },
 
   // Add an assignment to a user
-  addAssignment(req, res) {
-    console.log('You are adding an assignment');
+  addUser(req, res) {
+    console.log('You are adding an user');
     console.log(req.body);
     User.findOneAndUpdate(
       { _id: req.params.userId },
@@ -91,7 +91,7 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
   // Remove assignment from a user
-  removeAssignment(req, res) {
+  removeUser(req, res) {
     User.findOneAndUpdate(
       { _id: req.params.userId },
       { $pull: { assignment: { assignmentId: req.params.assignmentId } } },
