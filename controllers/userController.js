@@ -5,6 +5,7 @@ module.exports = {
   // Get all user
   getUser(req, res) {
     User.find()
+    .populate("thoughts")
       .then(async (user) => {
         const userObj = {
           user
@@ -105,4 +106,41 @@ module.exports = {
       )
       .catch((err) => res.status(500).json(err));
   },
+
+getSingleUser(req, res) {
+  User.findOne({ _id: req.params.userId })
+    .select('-__v')
+    .then(async (user) =>
+      !user
+        ? res.status(404).json({ message: 'No student with that ID' })
+        : res.json({
+            user,
+            
+          })
+    )
+    .catch((err) => {
+      console.log(err);
+      return res.status(500).json(err);
+    });
+},
+
+addFriend(req, res) {
+  User.findOneAndUpdate(
+    { _id: req.params.userId },
+    { $addToSet: { reactions: req.body.friendId } },
+    { runValidators: true, new: true }
+  )
+    .then((user) => {
+      if (!user) {
+        return res.status(404).json({ message: 'No Friend with this id!' });
+      }
+      res.json(user);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+},
+
 };
+

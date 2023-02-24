@@ -5,8 +5,8 @@ const {
   createUser,
   updateUser,
   deleteUser,
-  addAssignment,
-  removeAssignment,
+  addFriend,
+ 
 } = require('../../controllers/userController');
 
 // getAll and createRoutes for the Url /api /user *not by ID
@@ -17,10 +17,7 @@ router.route('/').get(getUser).post(createUser);
 // /api/users/:userId   //req.params indicated by : in url and is a changeable value to indicate aelector (id in this case)
 router.route('/:userId').get(getSingleUser).put(updateUser).delete(deleteUser);
 
-// /api/students/:studentId/assignments
-router.route('/:userId/assignments').post(addAssignment);
+router.route('/:userId/friend').post(addFriend);
 
-// /api/students/:studentId/assignments/:assignmentId
-router.route('/:userId/assignments/:assignmentId').delete(removeAssignment);
 
 module.exports = router;
