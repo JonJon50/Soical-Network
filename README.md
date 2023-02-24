@@ -57,12 +57,13 @@
 
 🔭 [Deployment Website](https://lit-depths-94534.herokuapp.com/) 🔭
 
-![Photo1](./assets/images/Nannys%20care2.png)
-![Photo1](./assets/images/Nanny's%20Care1.png)
+![Photo1](./assets/images/Insomnia.png)
+![Photo1](./assets/images/Insomnia1.png)
+![Photo1](./assets/images/MongoDB.png)
 
 
 
-
+![](https://i.imgur.com/waxVImv.png)
 
 <br>
 
@@ -77,10 +78,6 @@
 - Node.js 
 - Express.js 
 - RESTful API
-- Handlebars.js
-- Bootstrap
-- HTML
-- CSS
 - NoSQL
 
 
@@ -93,9 +90,7 @@
 
 👨‍💻 We are Coding BootCamp Alumni of [UCF](https://www.ucf.edu/students/) ⭐️
 
-- [Profile]( https://github.com/MilenaSilveira   " Milena Silveira ") -- Milena Silveira
-- [Profile]( https://github.com/DomSpadafora  " Dom Spadafora ") -- Dom Spadafora
-- [Profile]( https://github.com/darioelao  " Dario Elao ") -- Dario Elao
+
 - [Profile]( https://github.com/JonJon50  " John Hagens ") -- John Hagens
 
 
